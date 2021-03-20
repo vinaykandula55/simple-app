@@ -19,7 +19,7 @@ pipeline {
 
                     
                     nexusArtifactUploader artifacts: [[artifactId: 'simple-app', classifier: '', file: 'simple-app.1.0.0.war', type: 'war']], credentialsId: 'nexus3', groupId: 'in.javahome', nexusUrl: '13.52.81.222:8081/repository/maven-releases/', nexusVersion: 'nexus2', protocol: 'http', repository: 'http://13.52.81.222:8081/repository/maven-releases/', version: '1.0.0'
-            }
+            
         }
     }
 }
